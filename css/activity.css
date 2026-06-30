@@ -1,0 +1,938 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #9195a3;
+    display: flex;
+    justify-content: center;
+
+}
+
+.activity-page {
+    width: 100%;
+    max-width: 400px;
+    background: #242424;
+    min-height: 100vh;
+}
+
+/* Logo Header */
+
+.activity-header {
+    height: 60px;
+    width: 400px;
+    background: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.activity-header img {
+    width: 120px;
+    
+}
+
+/* Login */
+.log-in-btn {
+    width: 100%;
+    height: 75px;
+    background: #333332;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-btn .login-btn {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #d8a949;
+    border-radius: 30px;
+    background: #242424;
+    color: #d8a949;
+    font-size: 18px;
+    cursor: default;
+}
+
+/* Icons */
+
+.top-icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.icon-box {
+    text-align: center;
+}
+
+.icon-box i {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* Super Jackpot */
+.icon-box:first-child i {
+    background: linear-gradient(to bottom, #7fffd4, #49d7b0);
+}
+
+/* Invite Wheel */
+.icon-box:last-child i {
+    background: linear-gradient(to bottom, #ff9a8b, #ff7b7b);
+
+}
+
+.icon-box p {
+    color: #cfcfcf;
+    font-size: 13px;
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+
+/* Cards */
+
+.activity-cards {
+    padding: 0 12px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background: #343434;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bonus-cards {
+    padding: 0 12px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+
+}
+
+.bonus-card {
+    width: 100%;
+    background: #333332;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.bonus-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.bonus-card h3 {
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 600;
+}
+.bonus-cards p{
+    color: #9195a3;
+    text-align: center;
+}
+.activity-top{
+    display:flex;
+    margin-top: -50px;
+    justify-content:space-evenly;
+    align-items:center;
+    background:#333332;
+    padding:15px 10px;
+}
+
+.bonus-box{
+    text-align:center;
+    height: 60px;
+}
+
+.bonus-box h4{
+    color:#fff;
+    font-size:16px;
+    font-weight:400;
+}
+
+.bonus-box h2{
+    color:#fff;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.divider{
+    width:1px;
+    height:50px;
+    background:#4d4d7d;
+}
+
+.log-in-btn {
+    width: 100%;
+    height: 120px;
+    background: #333332;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-btn .bonus-btn {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #d8a949;
+    border-radius: 30px;
+    background: #242424;
+    color: #d8a949;
+    font-size: 14px;
+    cursor: default;
+    margin-top: 50px;
+}
+
+.bonus-icons{
+    display:flex;
+    justify-content:space-around;
+    padding:25px 15px 20px;
+}
+
+.bonus-item{
+    text-align:center;
+}
+
+.icon-bg{
+    width:55px;
+    height:55px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+
+.icon-bg i{
+    color:#fff;
+    font-size:25px;
+}
+
+.blue{
+    background:linear-gradient(#9fd4ff,#6ab4ff);
+}
+
+.orange{
+    background:linear-gradient(#ffc658,#f4a300);
+}
+
+.green{
+    background:linear-gradient(#86ffe3,#41d8aa);
+}
+
+.pink{
+    background:linear-gradient(#ffb4b4,#ff8f8f);
+}
+
+.bonus-item span{
+    color:#ddd;
+    font-size:14px;
+    display:block;
+    margin-top:8px;
+    line-height:18px;
+}
+
+/* promotion page */
+.promotion-page{
+    width:100%;
+    max-width:400px;
+    min-height:100vh;
+    background:#242424;
+}
+
+/* Fixed Header */
+
+.promotion-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    max-width:400px;
+    height:50px;
+    background:#3b3b3b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.promotion-header h2{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+}
+
+.promotion-icon{
+    position:absolute;
+    right:20px;
+    color:#d8a949;
+    font-size:20px;
+}
+
+/* Section */
+
+.promotion-section{
+    padding-top:50px;
+    min-height:100vh;
+    background:linear-gradient(#f6e1a0 0%, #f6e1a0 45%, #242424 45%);
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: -60px;
+}
+
+.promotion-card{
+    background:#333332;
+    border-radius:15px;
+    text-align:center;
+    padding:30px 20px;
+    position:relative;
+    top:25px;
+}
+
+.promo-user-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:linear-gradient(to right,#f7e8a7,#d8a949);
+    margin:0 auto 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.promo-user-icon i{
+    color:#fff;
+    font-size:22px;
+}
+
+.promotion-card h2{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.promotion-card p{
+    color:#bdbdbd;
+    font-size:14px;
+    line-height:24px;
+}
+
+.promo-login-btn{
+    width:210px;
+    height:45px;
+    margin:10px auto;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right,#f7e8a7,#d8a949);
+    color:#8b5700;
+    font-size:15px;
+    font-weight:600;
+}
+
+.promo-links{
+    color:#9f9f9f;
+    font-size:13px;
+    line-height:24px;
+}
+
+.promo-links span{
+    color:#d8a949;
+}
+.download-btn{
+    width:88%;
+    height:45px;
+    margin:auto;
+    margin-top: -120px;
+    border-radius:30px;
+    background:linear-gradient(to right,#fff0a4,#d89b2b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    font-weight:700;
+    color:#8a5100;
+}
+
+.agency-menu{
+    padding:12px 15px 20px;
+}
+
+.agency-item{
+    background:#2b2b2b;
+    border-radius:10px;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 18px;
+    margin-bottom:15px;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.left i{
+    font-size:20px;
+    color:#d6a53b;
+    width:35px;
+    text-align:center;
+}
+
+.left span{
+    color:#fff;
+    font-size:16px;
+}
+
+.agency-item>.fa-angle-right{
+    color:#fff;
+    font-size:18px;
+}
+/* ================= Logged In Promotion Page ================= */
+
+/* Main Container */
+.promotion-user{
+    width:100%;
+    max-width:400px;
+    margin:auto;
+    background:#242424;
+    min-height:100vh;
+    padding-bottom:90px;
+}
+
+/* Header */
+.agency-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    max-width:400px;
+    height:50px;
+    background:#3b3b3b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.agency-header h2{
+    color:#fff;
+    font-size:20px;
+    font-weight:500;
+}
+
+.agency-header i{
+    position:absolute;
+    right:18px;
+    color:#d8a949;
+    font-size:20px;
+}
+
+/* Top Yellow Section */
+.agency-top{
+    background:linear-gradient(to bottom,#f8e6a6,#d8a949);
+    text-align:center;
+    padding:50px 20px 70px;
+    margin-top: -80px;
+}
+
+.agency-top h1{
+    font-size:30px;
+    color:#8a5100;
+    font-weight:700;
+}
+
+.commission-pill{
+    display:inline-block;
+    background:#333;
+    color:#d8a949;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin:7px 0;
+}
+
+.agency-top p{
+    color:#5a4a2b;
+    font-size:14px;
+}
+
+/* Team Card */
+.team-card{
+    width:92%;
+    margin:-60px auto 20px;
+    background:#333332;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.team-head{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.head-box{
+    padding:10px 12px;
+    background:#444;
+    color:#fff;
+    text-align:center;
+    font-size:14px;
+}
+
+.head-box:first-child{
+    border-right:1px solid #555;
+}
+
+.head-box i{
+    color:#d8a949;
+    margin-right:5px;
+}
+
+.team-body{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.team-column{
+    text-align:center;
+    padding:0px 10px;
+}
+
+.team-column:first-child{
+    border-right:1px solid #444;
+}
+
+.team-column h2,
+.team-column h3,
+.team-column h4{
+    font-size:18px;
+    margin:12px 0 5px;
+}
+
+.team-column h2{
+    color:#fff;
+}
+
+.team-column h3{
+    color:#34d399;
+}
+
+.team-column h4{
+    color:#d8a949;
+}
+
+.team-column span{
+    color:#aaa;
+    font-size:12px;
+    line-height:18px;
+    display:block;
+    margin-bottom:15px;
+}
+.download-btn-qr{
+    width:88%;
+    height:45px;
+    margin:auto;
+    margin-top:40px;
+    border-radius:30px;
+    background:linear-gradient(to right,#fff0a4,#d89b2b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    font-weight:700;
+    color:#8a5100;
+}
+ .agency-lists{
+    padding:12px 15px 20px;
+}
+
+.agency-items{
+    background:#2b2b2b;
+    border-radius:10px;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 18px;
+    margin-bottom:15px;
+}
+.agency-items .right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#d8a949;
+}
+
+.agency-items small{
+    color:#bbb;
+} 
+.left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.left i{
+    font-size:20px;
+    color:#d6a53b;
+    width:35px;
+    text-align:center;
+}
+
+.left span{
+    color:#fff;
+    font-size:16px;
+}
+
+.agency-items>.fa-angle-right{
+    color:#fff;
+    font-size:18px;
+}
+
+/* Promotion Data */
+.promotion-data{
+    width:92%;
+    margin:20px auto;
+    background:#333332;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.promotion-data h3{
+    color:#fff;
+    font-size:16px;
+    padding:18px;
+}
+
+.promotion-data h3 i{
+    color:#d8a949;
+}
+
+.promotion-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.promotion-grid div{
+    text-align:center;
+    padding:8px 10px;
+}
+
+.promotion-grid h2{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.promotion-grid p{
+    color:#aaa;
+    font-size:13px;
+    line-height:18px;
+}
+
+/* Responsive */
+@media(max-width:320px){
+
+    
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:400px){
+
+    .activity-header{
+        height:55px;
+    }
+
+    .activity-header img{
+        width:110px;
+        margin-right:80px;
+    }
+
+    .top-icons{
+        gap:50px;
+    }
+
+    .icon-box i{
+        width:50px;
+        height:50px;
+        font-size:24px;
+    }
+
+    .activity-cards{
+        gap:10px;
+        padding:0 10px 15px;
+    }
+
+    .card img{
+        height:110px;
+    }
+
+    .activity-top{
+        margin-top: -60px;
+    }
+    .card-content h3{
+        font-size:16px;
+    }
+
+    .card-content p{
+        font-size:13px;
+        line-height:18px;
+    }
+    .bonus-card img{
+        height:130px;
+    }
+
+    .bonus-card h3{
+        font-size:15px;
+        padding:12px;
+    }
+
+    .bonus-icons{
+        padding:20px 10px;
+    }
+    .log-in-btn{
+        height: 120px;
+        margin-top: -70px;
+    }
+
+    .bonus-item span{
+        font-size:13px;
+    }
+}
+
+
+/* 320px */
+
+@media (max-width:320px){
+
+    .activity-header img{
+        width:100px;
+        margin-right: 130px;
+    }
+
+    .log-in-btn .login-btn,
+    .log-in-btn .bonus-btn{
+        width:120px;
+        height:40px;
+        font-size:15px;
+    }
+    .log-in-btn{
+        margin-top: -70px;
+    }
+
+    .top-icons{
+        gap:35px;
+    }
+
+    .icon-box i,
+    .icon-bg{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+    .icon-box p,
+    .bonus-item span{
+        font-size:12px;
+    }
+
+    .activity-cards{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:140px;
+    }
+
+    .card-content h3{
+        font-size:15px;
+    }
+
+    .card-content p{
+        font-size:12px;
+    }
+
+    .bonus-card img{
+        height:110px;
+    }
+
+    .bonus-box h4{
+        font-size:14px;
+    }
+
+    .bonus-box h2{
+        font-size:13px;
+    }
+    .agency-top h1{
+        font-size:40px;
+    }
+
+    .head-box{
+        font-size:12px;
+    }
+
+    .team-column h2,
+    .team-column h3,
+    .team-column h4{
+        font-size:20px;
+    }
+
+    .promotion-grid h2{
+        font-size:20px;
+    }
+
+    .promotion-grid p{
+        font-size:12px;
+    }
+}
+
+
+/* 250px */
+
+@media (max-width:250px){
+
+    .activity-header{
+        height:50px;
+        
+    }
+
+    .activity-header img{
+        width:85px;
+    }
+
+    .top-icons{
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    .bonus-icons{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .activity-top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .divider{
+        width:70%;
+        height:1px;
+    }
+
+    .log-in-btn .login-btn,
+    .log-in-btn .bonus-btn{
+        width:100px;
+        height:36px;
+        font-size:14px;
+    }
+
+    .card img{
+        height:120px;
+    }
+
+    .bonus-card img{
+        height:90px;
+    }
+
+    .bonus-card h3{
+        font-size:14px;
+        padding:10px;
+    }
+}
+
+
+/* 200px */
+
+@media (max-width:200px){
+
+    .activity-page{
+        min-width:100%;
+    }
+
+    .activity-header img{
+        width:75px;
+    }
+
+    .icon-box i,
+    .icon-bg{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+
+    .icon-box p,
+    .bonus-item span{
+        font-size:11px;
+    }
+
+    .card-content{
+        padding:8px;
+    }
+
+    .card-content h3{
+        font-size:13px;
+    }
+
+    .card-content p{
+        font-size:11px;
+        line-height:16px;
+    }
+
+    .bonus-card h3{
+        font-size:13px;
+    }
+}
+
+
+
+
+

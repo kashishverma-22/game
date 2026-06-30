@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/activity.css">
 </head>
 
 <body>
@@ -869,6 +870,489 @@
                 </div>
 
             </div>
+
+            <!-- activity page -->
+            <div id="activityPage" class="content-page" style="display:none;">
+
+                <div class="activity-guest">
+                    <!-- Top Logo -->
+                    <div class="activity-header">
+                        <img src="image/logo.png" alt="BDG GAME">
+                    </div>
+
+                    <!-- Login Button -->
+                    <div class="log-in-btn">
+                        <button class="login-btn" onclick="openPopup()">Login</button>
+                    </div>
+
+                    <!-- Icons -->
+                    <div class="top-icons">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-trophy"></i>
+                            <p>Super<br>Jackpot</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-dharmachakra"></i>
+                            <p>Invite<br>Wheel</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="activityLogged" style="display:none;">
+                    <div class="activity-header">
+                        <img src="image/logo.png" alt="BDG GAME">
+                    </div>
+
+                    <div class="activity-top">
+
+                        <div class="bonus-box">
+                            <h4>Today's bonus</h4>
+                            <h2>₹0.00</h2>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="bonus-box">
+                            <h4>Total bonus</h4>
+                            <h2>₹0.00</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="log-in-btn">
+                        <button class="bonus-btn">Bonus details</button>
+                    </div>
+
+                    <div class="bonus-icons">
+
+                        <div class="bonus-item">
+                            <div class="icon-bg blue">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <span>Invitation<br>bonus</span>
+                        </div>
+
+                        <div class="bonus-item">
+                            <div class="icon-bg orange">
+                                <i class="fa-solid fa-coins"></i>
+                            </div>
+                            <span>Betting<br>rebate</span>
+                        </div>
+
+                        <div class="bonus-item">
+                            <div class="icon-bg green">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <span>Super<br>Jackpot</span>
+                        </div>
+
+                        <div class="bonus-item">
+                            <div class="icon-bg pink">
+                                <i class="fa-solid fa-dharmachakra"></i>
+                            </div>
+                            <span>Invite<br>Wheel</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Cards -->
+                <div class="activity-cards">
+
+                    <div class="card" onclick="openPopup()">
+                        <img src="image/gifts.png" alt="">
+                        <div class="card-content">
+                            <h3>Gifts</h3>
+                            <p>
+                                Enter the redemption code to receive gift rewards
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="openPopup()">
+                        <img src="image/attendance.png" alt="">
+                        <div class="card-content">
+                            <h3>Attendance bonus</h3>
+                            <p>
+                                The more consecutive days you sign in, the higher the reward will be.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bonus-cards">
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h1.jpeg" alt="">
+                        <h3>Super jackpot coming</h3>
+                    </div>
+
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h2.png" alt="">
+                        <h3>30/S1 Minute lottery game</h3>
+                    </div>
+
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h3.png" alt="">
+                        <h3>Invitation bonus</h3>
+                    </div>
+
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h4.png" alt="">
+                        <h3>Unlimited Daily cash rebate</h3>
+                    </div>
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h5.png" alt="">
+                        <h3>Mystery random bonus</h3>
+                    </div>
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h6.png" alt="">
+                        <h3>Daily check-in Bonus</h3>
+                    </div>
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h10.png" alt="">
+                        <h3>Aviator Bonus</h3>
+                    </div>
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h8.jpg" alt="">
+                        <h3>Member return bonus</h3>
+                    </div>
+                    <div class="bonus-card" onclick="openPopup()">
+                        <img src="image/h9.png" alt="">
+                        <h3>First deposite bonus </h3>
+                    </div>
+
+                    <p>No more</p>
+                </div>
+
+
+
+            </div>
+
+            <!-- PROMOTION PAGE -->
+            <div id="promotionPage" class="content-page" style="display:none;">
+
+                <div id="promotionGuest">
+                    <!-- Fixed Header -->
+                    <div class="promotion-header">
+                        <h2>Agency</h2>
+
+                        <div class="promotion-icon">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                    </div>
+
+                    <!-- Main Section -->
+                    <div class="promotion-section">
+
+                        <div class="promotion-card">
+
+                            <div class="promo-user-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <h2>Agency promotion center</h2>
+
+                            <p>
+                                Log in to view your invitation code,
+                                subordinate data, and commission details
+                            </p>
+
+                            <button class="promo-login-btn" onclick="openPopup()">
+                                Log in to view
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+
+                            <div class="promo-links">
+                                Prefer not to log in? You can view
+                                <span>Invitation rules</span>
+                                and
+                                <span>Rebate ratio</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Download Button -->
+                    <div class="download-btn">
+                        Download QR Code
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="agency-menu">
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span>Copy invitation code</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Subordinate data</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>Commission detail</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <span>Invitation rules</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-headset"></i>
+                                <span>Agent line customer service</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                        <div class="agency-item">
+                            <div class="left">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                                <span>Rebate ratio</span>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ================= Logged In Promotion Page ================= -->
+
+                <div id="promotionUser" class="promotion-user" style="display:none;">
+
+                    <!-- Header -->
+                    <div class="agency-header">
+                        <h2>Agency</h2>
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+
+                    <!-- Top Commission -->
+                    <div class="agency-top">
+
+                        <h1>0</h1>
+
+                        <div class="commission-pill">
+                            Yesterday's total commission
+                        </div>
+
+                        <p>Upgrade the level to increase commission income</p>
+
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="team-card">
+
+                        <div class="team-head">
+
+                            <div class="head-box">
+                                <i class="fa-solid fa-user-group"></i>
+                                Direct subordinates
+                            </div>
+
+                            <div class="head-box">
+                                <i class="fa-solid fa-users"></i>
+                                Team subordinates
+                            </div>
+
+                        </div>
+
+                        <div class="team-body">
+
+                            <!-- Left -->
+                            <div class="team-column">
+
+                                <h2>0</h2>
+                                <span>number of register</span>
+
+                                <h3>0</h3>
+                                <span>Deposit number</span>
+
+                                <h4>0</h4>
+                                <span>Deposit amount</span>
+
+                                <h2>0</h2>
+                                <span>Number of people making first deposit</span>
+
+                            </div>
+
+                            <!-- Right -->
+                            <div class="team-column">
+
+                                <h2>0</h2>
+                                <span>number of register</span>
+
+                                <h3>0</h3>
+                                <span>Deposit number</span>
+
+                                <h4>0</h4>
+                                <span>Deposit amount</span>
+
+                                <h2>0</h2>
+                                <span>Number of people making first deposit</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- QR Button -->
+
+                    <button class="download-btn-qr">
+                        Download QR Code
+                    </button>
+
+                    <!-- Menu -->
+
+                    <div class="agency-lists">
+
+                        <div class="agency-items">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-id-card"></i>
+
+                                <span>Copy invitation code</span>
+
+                            </div>
+
+                            <div class="right">
+
+                                <small>6212722457825</small>
+
+                                <i class="fa-regular fa-copy"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="agency-item">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <span>Subordinate data</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+
+                        <div class="agency-item">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-dollar-sign"></i>
+
+                                <span>Commission detail</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+
+                        <div class="agency-item">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-bookmark"></i>
+
+                                <span>Invitation rules</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+
+                        <div class="agency-item">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-headset"></i>
+
+                                <span>Agent line customer service</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+
+                        <div class="agency-item">
+
+                            <div class="left">
+
+                                <i class="fa-solid fa-sack-dollar"></i>
+
+                                <span>Rebate ratio</span>
+
+                            </div>
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Promotion Data -->
+
+                    <div class="promotion-data">
+
+                        <h3>
+                            <i class="fa-solid fa-wallet"></i>
+                            promotion data
+                        </h3>
+
+                        <div class="promotion-grid">
+
+                            <div>
+                                <h2>0</h2>
+                                <p>This Week</p>
+                            </div>
+
+                            <div>
+                                <h2>0</h2>
+                                <p>Total commission</p>
+                            </div>
+
+                            <div>
+                                <h2>0</h2>
+                                <p>direct subordinate</p>
+                            </div>
+
+                            <div>
+                                <h2>0</h2>
+                                <p>Total number of subordinates in the team</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
             <!-- ACCOUNT PAGE -->
 
             <div id="accountPage" class="content-page" style="display:none;">
@@ -1060,28 +1544,18 @@
 
             </div>
 
-            <!-- PROMOTION PAGE -->
-            <div id="promotionPage" class="content-page" style="display:none;">
-                ...
-            </div>
 
-            <!-- ACCOUNT PAGE -->
-            <div id="accountPage" class="content-page" style="display:none;">
-                ...
-            </div>
-            
+
 
         </div>
 
         <footer class="bottom-footer">
 
-            <a href="index.html" class="footer-item active home-btn" data-page="homePage"
-                onclick="showHome();showBonusPopup()">
+            <a href="index.html" class="footer-item active home-btn" data-page="homePage">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
-            <a href="activity.html" class="footer-item activity-btn" data-page="activityPage"
-                onclick="showActivity();showBonusPopup()">
+            <a href="#" class="footer-item activity-btn" data-page="activityPage">
                 <i class="fa-solid fa-trophy"></i>
                 <span>Activity</span>
             </a>
@@ -1101,8 +1575,7 @@
 
             </div>
 
-            <a href="promotion.html" class="footer-item promotion-btn" data-page="promotionPage"
-                onclick="showPromotion();showBonusPopup()">
+            <a href="#" class="footer-item promotion-btn" data-page="promotionPage">
                 <i class="fa-solid fa-gift"></i>
                 <span>Promotion</span>
             </a>

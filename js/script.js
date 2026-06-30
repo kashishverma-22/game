@@ -145,6 +145,16 @@ window.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".account-btn").classList.add("active");
     }
 
+    if (localStorage.getItem("isLoggedIn") === "true") {
+
+        document.getElementById("activityLogged").style.display = "block";
+        document.querySelector(".activity-guest").style.display = "none";
+
+    } else {
+
+        document.getElementById("activityLogged").style.display = "none";
+        document.querySelector(".activity-guest").style.display = "block";
+    }
 });
 
 // ================= ACCOUNT BUTTON =================
@@ -234,3 +244,65 @@ function closeLogoutPopup() {
         .classList.remove("show");
 }
 
+// activity page
+document.querySelector(".activity-btn")
+    .addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        document.getElementById("homePage").style.display = "none";
+        document.getElementById("accountPage").style.display = "none";
+        document.getElementById("activityPage").style.display = "block";
+
+        document.getElementById("mainHeader").style.display = "none";
+    });
+
+document.querySelector(".home-btn")
+    .addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        document.getElementById("homePage").style.display = "block";
+        document.getElementById("activityPage").style.display = "none";
+        document.getElementById("accountPage").style.display = "none";
+
+        document.getElementById("mainHeader").style.display = "flex";
+    });
+
+
+// promotion page
+document.querySelector(".promotion-btn").addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    // Main header hide
+    document.getElementById("mainHeader").style.display = "none";
+
+    // Sab pages hide
+    document.querySelectorAll(".content-page").forEach(page => {
+        page.style.display = "none";
+    });
+
+    // Promotion page show
+    document.getElementById("promotionPage").style.display = "block";
+
+    // Login check
+    if (localStorage.getItem("isLoggedIn") === "true") {
+
+        document.getElementById("promotionGuest").style.display = "none";
+        document.getElementById("promotionUser").style.display = "block";
+
+    } else {
+
+        document.getElementById("promotionGuest").style.display = "block";
+        document.getElementById("promotionUser").style.display = "none";
+    }
+
+    // Footer active
+    document.querySelectorAll(".footer-item").forEach(item => {
+        item.classList.remove("active");
+    });
+
+    this.classList.add("active");
+
+});
