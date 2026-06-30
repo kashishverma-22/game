@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDG Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="login-container">
+
+        <div class="login-top">
+
+            <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
+
+            <img src="image/logo.png" alt="">
+            <div class="lang">
+                <img src="image/flag.png">
+                <span>EN</span>
+            </div>
+        </div>
+
+        <div class="login-title">
+            <h2>Register</h2>
+            <p>
+                Please register by phone number or email
+            </p>
+        </div>
+
+        <!-- register form -->
+        <form id="registerForm" class="register-form">
+
+            <div class="register-heading">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Register your phone</h3>
+            </div>
+
+            <!-- Phone -->
+
+            <label>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                Phone number
+            </label>
+
+            <div class="phone-box">
+
+                <select id="countryCode">
+                    <option>+91</option>
+                    <option>+1</option>
+                    <option>+44</option>
+                </select>
+
+                <input type="tel" id="regPhone" placeholder="Please enter the phone number"><br>
+        
+            </div>
+            <small class="error" id="phoneError"></small>
+
+
+            <!-- Password -->
+
+            <label>
+                <i class="fa-solid fa-lock"></i>
+                Set password
+            </label>
+
+            <div class="password-box">
+
+                <input type="password" id="regPassword" placeholder="Set password">
+
+                <i class="fa-regular fa-eye-slash togglePassword"></i>
+                <small class="error" id="passwordError"></small>
+
+            </div>
+
+
+            <!-- Confirm Password -->
+
+            <label>
+                <i class="fa-solid fa-lock"></i>
+                Confirm password
+            </label>
+
+            <div class="password-box">
+
+                <input type="password" id="regConfirmPassword" placeholder="Confirm password">
+
+                <i class="fa-regular fa-eye-slash togglePassword"></i>
+                <small class="error" id="confirmError"></small>
+
+            </div>
+
+
+            <!-- Invite Code -->
+
+            <label>
+                <i class="fa-solid fa-box-open"></i>
+                Invite code
+            </label>
+
+            <input type="text" id="inviteCode" placeholder="Please enter the invitation code">
+            <small class="error" id="inviteError"></small>
+
+
+            <!-- Agreement -->
+
+            <div class="remember">
+
+                <input type="checkbox" id="agree">
+
+                <label for="agree">
+                    I have read and agree
+                    <span class="privacy-link">
+                        [Privacy Agreement]
+                    </span>
+                </label>
+                <small class="error" id="agreeError"></small>
+
+            </div>
+
+
+            <!-- Register Button -->
+
+            <button type="submit" class="register-submit-btn">
+                Register
+            </button>
+
+
+            <!-- Login Button -->
+
+            <a href="login.html" class="login-redirect">
+                <span>I have an account</span>
+                <strong>Login</strong>
+            </a>
+
+        </form>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

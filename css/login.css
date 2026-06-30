@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #9598a7;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    min-height: 100vh;
+    background: #242424;
+}
+
+.login-top {
+    height: 50px;
+    background: #3f3f3f;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-top a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.login-top img {
+    width: 140px;
+    max-width: 100%;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang img {
+    width: 30px;
+    height: 30px;
+}
+
+.lang span {
+    color: #7a453f;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.login-title {
+    padding: 20px;
+    color: #fff;
+    background: #333332;
+}
+
+.login-title h2 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.login-title p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.login-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: #b0b0b0;
+    padding: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #444;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab-btn span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.tab-btn.active {
+    color: #d8a949;
+    border-color: #d8a949;
+}
+
+.login-form {
+    padding: 20px;
+    display: none;
+}
+
+.active-form {
+    display: block;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 12px;
+}
+
+label i {
+    color: #d9ac4f;
+}
+
+.phone-box {
+    display: flex;
+    gap: 10px;
+}
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.phone-box select {
+    width: 80px;
+    color: #aeaca8;
+    font-size: 16px;
+}
+
+.phone-box input {
+    flex: 1;
+}
+
+input,
+select {
+    width: 100%;
+    height: 40px;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box i {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    color: #999;
+    cursor: pointer;
+}
+
+/* Input text white */
+
+input,
+select {
+    color: #fff;
+}
+
+input::placeholder {
+    color: #6f6f6f;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remember input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #c8c9cc;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Checked */
+.remember input[type="checkbox"]:checked {
+    background: #d8a949;
+}
+
+.remember input[type="checkbox"]:checked::before {
+    content: "✓";
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Text */
+
+.remember label {
+    color: #c5c5c5;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 80%;
+    margin-left: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: #8f92a1;
+    color: #a8a5a1;
+    font-size: 17px;
+    cursor: default;
+}
+
+.register-btn {
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    margin-left: 40px;
+    border: 1px solid #d8a949;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    color: #d8a949;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Bottom Icons */
+
+.bottom-options {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    align-items: center;
+    background: rgba(216, 169, 73, .12);
+    box-shadow:
+        0 0 10px rgba(216, 169, 73, .3),
+        inset 0 0 8px rgba(216, 169, 73, .3);
+}
+
+.icon-box i {
+    font-size: 24px;
+    color: #d8a949;
+
+}
+
+.bottom-item span {
+    color: #fff;
+    font-size: 15px;
+    cursor: default;
+}
+
+.error{
+    display:block;
+    color:#ff4d4d;
+    font-size:13px;
+    margin:5px 15px 15px;
+    min-height:16px;
+}
+
+/* ========== 400px se niche ========== */
+
+@media (max-width:400px){
+
+    .login-top{
+        padding:0 10px;
+    }
+
+    .login-top img{
+        width:110px;
+    }
+
+    .login-top a{
+        font-size:22px;
+    }
+
+    .lang{
+        gap:4px;
+        flex-shrink:0;
+    }
+
+    .lang img{
+        width:18px;
+        height:18px;
+        border-radius:50%;
+        object-fit:cover;
+    }
+
+    .lang span{
+        font-size:14px;
+    }
+
+    .login-title{
+        padding:15px;
+    }
+
+    .login-title h2{
+        font-size:18px;
+    }
+
+    .login-title p{
+        font-size:12px;
+        line-height:18px;
+    }
+
+    .login-tabs{
+        padding:15px 10px;
+    }
+
+    .tab-btn{
+        font-size:16px;
+        padding:12px 5px;
+    }
+
+    .tab-btn span{
+        font-size:13px;
+    }
+
+    .login-form{
+        padding:15px;
+    }
+
+    label{
+        font-size:14px;
+    }
+
+    .phone-box{
+        gap:8px;
+    }
+
+    .phone-box select{
+        width:70px;
+        font-size:14px;
+    }
+
+    input,
+    select{
+        height:38px;
+        font-size:14px;
+        padding:0 10px;
+    }
+
+    .remember label{
+        font-size:13px;
+    }
+
+    .login-btn,
+    .register-btn{
+        width:100%;
+        margin-left:0;
+        font-size:16px;
+    }
+
+    .bottom-options{
+        margin-top:25px;
+    }
+
+    .icon-box{
+        width:42px;
+        height:42px;
+    }
+
+    .icon-box i{
+        font-size:20px;
+    }
+
+    .bottom-item span{
+        font-size:13px;
+    }
+}
+
+
+/* ========== 320px se niche ========== */
+
+@media (max-width:320px){
+
+    .login-top{
+        padding:0 8px;
+    }
+
+    .login-top img{
+        width:90px;
+    }
+
+    .login-top a{
+        font-size:18px;
+    }
+
+    .lang img{
+        width:14px;
+        height:14px;
+    }
+
+    .lang span{
+        font-size:11px;
+    }
+
+    .tab-btn{
+        font-size:14px;
+    }
+
+    .tab-btn span{
+        font-size:11px;
+    }
+
+    .phone-box{
+        flex-direction:column;
+    }
+
+    .phone-box select{
+        width:100%;
+    }
+
+    .remember{
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .remember label{
+        font-size:12px;
+        line-height:18px;
+    }
+
+    .bottom-options{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .bottom-item{
+        width:40%;
+    }
+}

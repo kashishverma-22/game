@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDG Game</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap,font-awesome icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/a.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="top-header" id="mainHeader">
+            <!-- Left Side -->
+            <div class="header-left">
+                <div class="logo">
+                    <img src="image/logo.png" alt="BDG Logo">
+                </div>
+
+                <div class="welcome-box">
+                    <img src="image/flag.png" alt="flag">
+                    <span>Welcome to BDG Game</span>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="header-right">
+
+                <a href="#" class="header-btn">
+                    <i class="fa-solid fa-circle-down"></i>
+                    <span>Download APP</span>
+                </a>
+
+                <a href="#" class="header-btn">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Customer Service</span>
+                </a>
+
+            </div>
+        </header>
+
+        <div class="hero-content">
+
+            <!-- home page -->
+            <div id="homePage" class="content-page">
+                <div class="banner-slider">
+
+                    <div class="slides">
+                        <img src="image/h1.jpeg" alt="">
+                        <img src="image/h2.png" alt="">
+                        <img src="image/h3.png" alt="">
+                        <img src="image/h4.png" alt="">
+                        <img src="image/h5.png" alt="">
+                        <img src="image/h6.png" alt="">
+                        <img src="image/h7.png" alt="">
+                        <img src="image/h8.jpg" alt="">
+                        <img src="image/h9.png" alt="">
+                        <img src="image/h10.png" alt="">
+                        <img src="image/h11.png" alt="">
+                    </div>
+
+                </div>
+                <div class="notice-bar">
+
+                    <div class="notice-icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+
+                    <div class="notice-text">
+                        <div class="text-slider">
+                            <p>Please Fill In The Correct Bank Card Information.The Platform Will Process Withdrawal
+                                Quickly.</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="detail-btn">
+                        <i class="fa-solid fa-fire"></i>
+                        Detail
+                    </a>
+
+                </div>
+
+                <div class="games-section">
+                    <div class="top-row">
+
+                        <a href="#" class="game-card game-link active" data-page="lottery">
+                            <img src="image/lottery.png">
+                            <span>Lottery</span>
+                        </a>
+
+                        <a href="#" class="game-card game-link" data-page="original">
+                            <img src="image/original.png">
+                            <span>Original</span>
+                        </a>
+
+                        <a href="#" class="game-card game-link" data-page="slots">
+                            <img src="image/slots.png">
+                            <span>Slots</span>
+                        </a>
+
+                    </div>
+                    <div class="middle-row">
+
+                        <a href="#" class="game-link" data-page="sports">
+                            <img src="image/sport.png">
+                            <span>Sports</span>
+                        </a>
+
+                        <a href="#" class="game-link" data-page="popular">
+                            <img src="image/popular.png">
+                            <span>Popular</span>
+                        </a>
+
+                        <a href="#" class="game-link" data-page="casino">
+                            <img src="image/casino.png">
+                            <span>Casino</span>
+                        </a>
+
+                    </div>
+                    <div class="bottom-row">
+
+                        <a href="#" class="game-card game-link" data-page="rummy">
+                            <img src="image/rummy.png">
+                            <span>Rummy</span>
+                        </a>
+
+                        <a href="#" class="game-card game-link" data-page="fishing">
+                            <img src="image/fishing.png">
+                            <span>Fishing</span>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!-- Lottery Content -->
+                <div class="content-page" id="lottery">
+                    <div class="lottery-section">
+
+                        <h3 class="lottery-title">Lottery</h3>
+
+                        <div class="lottery-nav">
+                            <button class="tab-btn active" data-filter="all">All</button>
+                            <button class="tab-btn" data-filter="wingo">Win Go</button>
+                            <button class="tab-btn" data-filter="motorace">MotoRace</button>
+                            <button class="tab-btn" data-filter="trx">Trx Win</button>
+                            <button class="tab-btn" data-filter="k3">K3</button>
+                            <button class="tab-btn" data-filter="fiveD">5D</button>
+                        </div>
+
+                        <div class="lottery-cards" onclick="openPopup()">
+
+                            <a href="#" class="lottery-card wingo">
+                                <img src="image/1k.png">
+                                <span>Win Go 30s</span>
+                            </a>
+
+                            <a href="#" class="lottery-card wingo">
+                                <img src="image/1k.png">
+                                <span>Win Go 1Min</span>
+                            </a>
+                            <a href="#" class="lottery-card wingo">
+                                <img src="image/1k.png">
+                                <span>Win Go 3Min</span>
+                            </a>
+
+                            <a href="#" class="lottery-card wingo">
+                                <img src="image/1k.png">
+                                <span>Win Go 5Min</span>
+                            </a>
+
+                            <a href="#" class="lottery-card motorace">
+                                <img src="image/motorace.png">
+                                <span>MotoRace 1Min</span>
+                            </a>
+
+                            <a href="#" class="lottery-card trx">
+                                <img src="image/ballking.png">
+                                <span>TRX Win Go 1Min</span>
+                            </a>
+                            <a href="#" class="lottery-card trx">
+                                <img src="image/ballking.png">
+                                <span>TRX Win Go 3Min</span>
+                            </a>
+                            <a href="#" class="lottery-card trx">
+                                <img src="image/ballking.png">
+                                <span>TRX Win Go 5Min</span>
+                            </a>
+                            <a href="#" class="lottery-card trx">
+                                <img src="image/ballking.png">
+                                <span>TRX Win Go 10Min</span>
+                            </a>
+
+                            <a href="#" class="lottery-card k3">
+                                <img src="image/dise2.png">
+                                <span>K3 1Min</span>
+                            </a>
+                            <a href="#" class="lottery-card k3">
+                                <img src="image/dise2.png">
+                                <span>K3 3Min</span>
+                            </a>
+                            <a href="#" class="lottery-card k3">
+                                <img src="image/dise2.png">
+                                <span>K3 5Min</span>
+                            </a>
+                            <a href="#" class="lottery-card k3">
+                                <img src="image/dise2.png">
+                                <span>K3 10Min</span>
+                            </a>
+
+                            <a href="#" class="lottery-card fiveD">
+                                <img src="image/dise.png">
+                                <span>5D 1Min</span>
+                            </a>
+                            <a href="#" class="lottery-card fiveD">
+                                <img src="image/dise.png">
+                                <span>5D 3Min</span>
+                            </a>
+                            <a href="#" class="lottery-card fiveD">
+                                <img src="image/dise.png">
+                                <span>5D 5Min</span>
+                            </a>
+                            <a href="#" class="lottery-card fiveD">
+                                <img src="image/dise.png">
+                                <span>5D 10Min</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-page" id="original" style="display:none;">
+                    <section class="mini-games">
+
+                        <h2><span></span> Mini games</h2>
+
+                        <div class="game-grid">
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg1.png" alt="">
+
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg2.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg3.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg4.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg5.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg6.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg7.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg8.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg9.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg10.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg11.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg2.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg3.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg12.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg13.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg14.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg15.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg16.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg17.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg18.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg5.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg6.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg7.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/Mg14.png" alt="">
+                            </div>
+
+
+                        </div>
+
+                    </section>
+                </div>
+                <!-- Slots Content -->
+                <div class="content-page" id="slots" style="display:none;">
+                    <section class="slots">
+
+                        <h2><span></span> Slots</h2>
+
+                        <div class="games-grid">
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s1.png" alt="">
+
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s2.jpg" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s3.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s4.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s5.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s6.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s7.png" alt="">
+                            </div>
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s8.png" alt="">
+                            </div>
+
+                            <div class="game-cards" onclick="openPopup()">
+                                <img src="image/s10.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="content-page" id="sports" style="display:none;">
+                    <section class="sports">
+
+                        <h2><span></span> Sports</h2>
+
+                        <div class="sports-grid">
+
+                            <div class="sports-cards" onclick="openPopup()">
+                                <img src="image/sport1.png" alt="">
+
+                            </div>
+
+                            <div class="sports-cards" onclick="openPopup()">
+                                <img src="image/sport2.png" alt="">
+                            </div>
+
+                            <div class="sports-cards" onclick="openPopup()">
+                                <img src="image/sport3.png" alt="">
+                            </div>
+
+                            <div class="sports-cards" onclick="openPopup()">
+                                <img src="image/sport4.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="content-page" id="popular" style="display:none;">
+                    <div class="popular-section">
+
+                        <h2><span></span> Popular</h2>
+
+                        <div class="popular-grid">
+
+                            <!-- Card -->
+                            <div class="popular-card" onclick="openPopup()">
+                                <img src="image/popular1.png" alt="">
+                                <div class="rtp">
+                                    <span>RTP</span>
+                                    <strong>97.2%</strong>
+                                </div>
+                            </div>
+
+                            <div class="popular-card" onclick="openPopup()">
+                                <img src="image/pop2.png" alt="">
+                                <div class="rtp">
+                                    <span>RTP</span>
+                                    <strong>96.29%</strong>
+                                </div>
+                            </div>
+
+                            <div class="popular-card" onclick="openPopup()">
+                                <img src="image/pop3.png" alt="">
+                                <div class="rtp">
+                                    <span>RTP</span>
+                                    <strong>97.19%</strong>
+                                </div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop4.png">
+                                <div class="rtp"><span>RTP</span><strong>97%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop5.png">
+                                <div class="rtp"><span>RTP</span><strong>96%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop6.png">
+                                <div class="rtp"><span>RTP</span><strong>98%</strong></div>
+                            </div>
+
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop7.png">
+                                <div class="rtp"><span>RTP</span><strong>97%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop8.png">
+                                <div class="rtp"><span>RTP</span><strong>96%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop9.png">
+                                <div class="rtp"><span>RTP</span><strong>95%</strong></div>
+                            </div>
+
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop10.png">
+                                <div class="rtp"><span>RTP</span><strong>98%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop11.png">
+                                <div class="rtp"><span>RTP</span><strong>97%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop12.png">
+                                <div class="rtp"><span>RTP</span><strong>96%</strong></div>
+                            </div>
+
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop13.png">
+                                <div class="rtp"><span>RTP</span><strong>98%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop14.png">
+                                <div class="rtp"><span>RTP</span><strong>97%</strong></div>
+                            </div>
+                            <div class="popular-card" onclick="openPopup()"><img src="image/pop15.png">
+                                <div class="rtp"><span>RTP</span><strong>96%</strong></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content-page" id="casino" style="display:none;">
+                    <section class="casino">
+
+                        <h2><span></span>Casino</h2>
+
+                        <div class="casino-grid">
+
+                            <div class="casino-cards" onclick="openPopup()">
+                                <img src="image/g2.png ">
+                            </div>
+                            <div class="casino-cards" onclick="openPopup()">
+                                <img src="image/g3.png ">
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="content-page" id="rummy" style="display:none;">
+                    <section class="rummy">
+
+                        <h2><span></span>PVC</h2>
+
+                        <div class="pvc-grid">
+
+                            <div class="pvc-cards" onclick="openPopup()">
+                                <img src="image/pvc1.png ">
+                            </div>
+                            <div class="pvc-cards" onclick="openPopup()">
+                                <img src="image/pvc2.png ">
+                            </div>
+                            <div class="pvc-cards" onclick="openPopup()">
+                                <img src="image/pvc3.png ">
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="content-page" id="fishing" style="display:none;">
+                    <div class="fishing-section">
+                        <h2><span></span>Fishing</h2>
+                        <div class="fishing-grid">
+                            <!-- Card -->
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f1.png" alt=""></div>
+
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f2.png" alt=""></div>
+
+                            <div class="fishing-card" onclick="openPopup()"> <img src="image/f3.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f4.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f5.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f6.png"></div>
+
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f7.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f8.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f9.png"></div>
+
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f10.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f11.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f12.png"></div>
+
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f13.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f14.png"></div>
+                            <div class="fishing-card" onclick="openPopup()"><img src="image/f15.png"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Popup -->
+                <div class="popup" id="popup">
+                    <div class="popup-box">
+
+                        <img src="image/gift.png" class="gift">
+                        <h2>Event Rewards</h2>
+                        <p>
+                            Log in to participate in the
+                            <span>event rewards</span> and unlock
+                            all 8 exclusive rewards
+                        </p>
+
+                        <button onclick="location.href='login.html'">
+                            Log in now to participate
+                        </button>
+
+                        <div class="skip" onclick="closePopup()">
+                            Don't log in yet, continue browsing
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="winner-section">
+                    <h3 class="winner-title">Winning information</h3>
+                    <div class="winner-cards">
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p1.png" alt="">
+                                <span>Mem***SJk</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/ballking.png" alt="">
+                                <div>
+                                    <h4>Receive ₹250,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p2.png" alt="">
+                                <span>Mem***VPM</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/1k.png" alt="">
+                                <div>
+                                    <h4>Receive ₹500,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p3.png" alt="">
+                                <span>Mem***ANK</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/g1.png" alt="">
+                                <div>
+                                    <h4>Receive ₹400,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p4.png" alt="">
+                                <span>Mem***RTW</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/dise.png" alt="">
+                                <div>
+                                    <h4>Receive ₹190,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p5.png" alt="">
+                                <span>Mem***XXM</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/dise2.png" alt="">
+                                <div>
+                                    <h4>Receive ₹160,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p6.png" alt="">
+                                <span>Mem***WOP</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/g2.png" alt="">
+                                <div>
+                                    <h4>Receive ₹300,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p7.png" alt="">
+                                <span>Mem***VUT</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/ballking.png" alt="">
+                                <div>
+                                    <h4>Receive ₹220,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p8.png" alt="">
+                                <span>Mem***WWP</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/dise.png" alt="">
+                                <div>
+                                    <h4>Receive ₹100,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p9.png" alt="">
+                                <span>Mem***CCK</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/1k.png" alt="">
+                                <div>
+                                    <h4>Receive ₹500,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p10.png" alt="">
+                                <span>Mem***SJk</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/ballking.png" alt="">
+                                <div>
+                                    <h4>Receive ₹440,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p11.png" alt="">
+                                <span>Mem***vip</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/ballking.png" alt="">
+                                <div>
+                                    <h4>Receive ₹250,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p12.png" alt="">
+                                <span>Mem***WQR</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/dise2.png" alt="">
+                                <div>
+                                    <h4>Receive ₹120,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p13.png" alt="">
+                                <span>Mem***KLP</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/1k.png" alt="">
+                                <div>
+                                    <h4>Receive ₹220,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p14.png" alt="">
+                                <span>Mem***NMP</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/g2.png" alt="">
+                                <div>
+                                    <h4>Receive ₹1470,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-win">
+                            <div class="left-win">
+                                <img src="image/p15.png" alt="">
+                                <span>Mem***KJF</span>
+                            </div>
+                            <div class="right-win">
+                                <img src="image/g1.png" alt="">
+                                <div>
+                                    <h4>Receive ₹3500,00</h4>
+                                    <p>Winning amount</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="earning-section">
+
+                    <h3 class="winner-title">Today's Earning</h3>
+
+                    <!-- Top 3 -->
+                    <div class="top-earners">
+
+                        <!-- 2nd Rank -->
+                        <div class="podium-card second">
+                            <span class="medal">🥈</span>
+                            <img src="image/p2.png" alt="">
+                            <h4>Mem***XYZ</h4>
+                            <p>₹210,406,000</p>
+                            <div class="rank-box">2</div>
+                        </div>
+
+                        <!-- 1st Rank -->
+                        <div class="podium-card first">
+                            <span class="medal">👑</span>
+                            <img src="image/p1.png" alt="">
+                            <h4>Mem***SJK</h4>
+                            <p>₹300,406,000</p>
+                            <div class="rank-box">1</div>
+                        </div>
+
+                        <!-- 3rd Rank -->
+                        <div class="podium-card third">
+                            <span class="medal">🥉</span>
+                            <img src="image/p3.png" alt="">
+                            <h4>Mem***ABC</h4>
+                            <p>₹100,406,000</p>
+                            <div class="rank-box">3</div>
+                        </div>
+
+                    </div>
+                    <!-- Rank List -->
+                    <div class="earning-list">
+
+                        <div class="earning-row">
+                            <span class="rank">4</span>
+                            <img src="image/p1.png" alt="">
+                            <span class="user-name">Mem***Ksd</span>
+                            <span class="amount">₹858,300.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">5</span>
+                            <img src="image/p2.png" alt="">
+                            <span class="user-name">Mem***Tyu</span>
+                            <span class="amount">₹803,400.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">6</span>
+                            <img src="image/p3.png" alt="">
+                            <span class="user-name">Mem***Lmn</span>
+                            <span class="amount">₹500,120.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">7</span>
+                            <img src="image/p1.png" alt="">
+                            <span class="user-name">Mem***Rst</span>
+                            <span class="amount">₹480,230.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">8</span>
+                            <img src="image/p2.png" alt="">
+                            <span class="user-name">Mem***Pqr</span>
+                            <span class="amount">₹400,106.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">9</span>
+                            <img src="image/p3.png" alt="">
+                            <span class="user-name">Mem***Asd</span>
+                            <span class="amount">₹300,105.00</span>
+                        </div>
+
+                        <div class="earning-row">
+                            <span class="rank">10</span>
+                            <img src="image/p1.png" alt="">
+                            <span class="user-name">Mem***Qwe</span>
+                            <span class="amount">₹100,400.00</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ACCOUNT PAGE -->
+
+            <div id="accountPage" class="content-page" style="display:none;">
+                <!-- Profile Card -->
+                <div class="profile-header">
+
+                    <div class="profile-info">
+                        <img src="image/p6.png" alt="">
+
+                        <div class="user-details">
+                            <h3>MEMBERNNG34PXB</h3>
+
+                            <div class="uid-box">
+                                UID | 22457825
+                                <i class="fa-regular fa-copy"></i>
+                            </div>
+
+                            <p>Last login: 2026-06-30 12:59:56</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="balance-card">
+                    <p>Total balance</p>
+
+                    <div class="balance-row">
+                        <h2>₹28.00</h2>
+
+                        <button>Enter wallet</button>
+                    </div>
+
+                    <div class="wallet-menu">
+                        <div>
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>ARWallet</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Deposit</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>Withdraw</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-v"></i>
+                            <span>VIP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History Cards -->
+                <div class="history-grid">
+
+                    <a href="#" class="history-card">
+                        <i class="fa-solid fa-scroll"></i>
+                        <div>
+                            <h4>Game History</h4>
+                            <p>My game history</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="history-card">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <div>
+                            <h4>Transaction</h4>
+                            <p>My transaction history</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="history-card">
+                        <i class="fa-solid fa-book"></i>
+                        <div>
+                            <h4>Deposit</h4>
+                            <p>My deposit history</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="history-card">
+                        <i class="fa-solid fa-wallet"></i>
+                        <div>
+                            <h4>Withdraw</h4>
+                            <p>My withdraw history</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Menu List -->
+
+                <div class="account-menu">
+
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-bell"></i> Notification</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-gift"></i> Gifts</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-chart-column"></i> Game statistics</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-language"></i> Language</span>
+                        <div>
+                            English
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Service Center -->
+                <div class="service-center">
+
+                    <h3>Service center</h3>
+
+                    <div class="service-grid">
+
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-note-sticky"></i>
+                            <span>Feedback</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>Announcement</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Customer Service</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Beginner's Guide</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-cube"></i>
+                            <span>About us</span>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!-- Logout Button -->
+                <a class="logout-btn" onclick="openLogoutPopup()">
+                    <i class="fa-solid fa-power-off"></i>
+                    Log out
+                </a>
+
+
+                <!-- Logout Popup -->
+                <div class="logout-popup" id="logoutPopup">
+
+                    <div class="logout-box">
+
+                        <div class="logout-icon">
+                            <i class="fa-solid fa-exclamation"></i>
+                        </div>
+
+                        <h3>Do you want to log out?</h3>
+
+                        <button class="confirm-btn" onclick="confirmLogout()">
+                            Confirm
+                        </button>
+
+                        <button class="cancel-btn" onclick="closeLogoutPopup()">
+                            Cancel
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROMOTION PAGE -->
+            <div id="promotionPage" class="content-page" style="display:none;">
+                ...
+            </div>
+
+            <!-- ACCOUNT PAGE -->
+            <div id="accountPage" class="content-page" style="display:none;">
+                ...
+            </div>
+            
+
+        </div>
+
+        <footer class="bottom-footer">
+
+            <a href="index.html" class="footer-item active home-btn" data-page="homePage"
+                onclick="showHome();showBonusPopup()">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="activity.html" class="footer-item activity-btn" data-page="activityPage"
+                onclick="showActivity();showBonusPopup()">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Activity</span>
+            </a>
+
+            <!-- Center Button -->
+            <div class="center-box">
+
+                <a href="#" class="center-btn">
+                    <img src="image/logo2.png" alt="logo2">
+                    Add to Desktop
+                </a>
+
+                <a href="spinner.html" class="spinner-link">
+                    <img src="image/spinner.png" alt="Spinner">
+                    <span>Get ₹500</span>
+                </a>
+
+            </div>
+
+            <a href="promotion.html" class="footer-item promotion-btn" data-page="promotionPage"
+                onclick="showPromotion();showBonusPopup()">
+                <i class="fa-solid fa-gift"></i>
+                <span>Promotion</span>
+            </a>
+
+            <a href="#" class="footer-item account-btn" onclick="checkLogin(event)">
+                <i class="fa-solid fa-user"></i>
+                <span>Account</span>
+            </a>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- js links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

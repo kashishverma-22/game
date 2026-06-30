@@ -1,0 +1,377 @@
+/* original */
+.mini-games{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.mini-games h2{
+    color:#fff;
+    font-size:18px;
+    margin:0 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.mini-games h2 span{
+    width:5px;
+    height:20px;
+    background:#f5c64b;
+    border-radius:5px;
+}
+
+.game-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.game-cards{
+    background:#2a2a2a;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.game-cards img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+/* slots */
+.slots{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.slots h2{
+    color:#fff;
+    font-size:18px;
+    margin:0 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.slots h2 span{
+    width:5px;
+    height:20px;
+    background:#f5c64b;
+    border-radius:5px;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.game-cards{
+    background:#2a2a2a;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.game-cards img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+/* sports */
+.sports{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.sports h2{
+    color:#fff;
+    font-size:18px;
+    margin:0 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.sports h2 span{
+    width:5px;
+    height:20px;
+    background:#f5c64b;
+    border-radius:5px;
+}
+
+.sports-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.sports-cards{
+    background:#2a2a2a;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.sports-cards img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+/*popular section  */
+.popular-section{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    background:#1f1f1f;
+    box-sizing:border-box;
+}
+
+.popular-section h2{
+    color:#fff;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:15px;
+}
+
+.popular-section h2 span{
+    width:5px;
+    height:22px;
+    background:#f7c948;
+    border-radius:3px;
+}
+
+.popular-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.popular-card img{
+    width:100%;
+    height:145px;
+    border-radius:12px;
+    display:block;
+    object-fit:cover;
+    border:4px solid #333;
+}
+
+.rtp{
+    margin-top:6px;
+    background:#f2cf6b;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    padding:7px 10px;
+    font-size:12px;
+    font-weight:bold;
+    color:#222;
+}
+
+.rtp span{
+    color:#fff;
+}
+
+/* casino */
+.casino{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.casino h2{
+    color:#fff;
+    font-size:18px;
+    margin:0 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.casino h2 span{
+    width:5px;
+    height:20px;
+    background:#f5c64b;
+    border-radius:5px;
+}
+
+.casino-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.casino-cards{
+    background:#2a2a2a;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.casino-cards img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+/* rummy */
+.rummy{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.rummy h2{
+    color:#fff;
+    font-size:18px;
+    margin:0 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.rummy h2 span{
+    width:5px;
+    height:20px;
+    background:#f5c64b;
+    border-radius:5px;
+}
+
+.pvc-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.pvc-cards{
+    background:#2a2a2a;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.pvc-cards img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+/* fishing */
+.fishing-section{
+    width:400px;
+    margin:auto;
+    padding:15px;
+    background:#1f1f1f;
+    box-sizing:border-box;
+}
+
+.fishing-section h2{
+    color:#fff;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:15px;
+}
+
+.fishing-section h2 span{
+    width:5px;
+    height:22px;
+    background:#f7c948;
+    border-radius:3px;
+}
+
+.fishing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.fishing-card img{
+    width:100%;
+    height:145px;
+    border-radius:12px;
+    display:block;
+    object-fit:cover;
+    border:4px solid #333;
+}
+
+/* popup box */
+.popup{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.50);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.popup-box{
+    width:400px;
+    max-width:90%;
+    background:#353535;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    padding:20px 20px;
+    margin-top: 240px;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+
+.gift{
+    width:180px;
+    margin-top:-90px;
+}
+.popup-box h2{
+    font-size:20px;
+    margin:10px 0;
+    font-weight:700;
+}
+
+.popup-box p{
+    color:#ddd;
+    line-height:28px;
+    font-size:16px;
+}
+
+.popup-box p span{
+    color:#f5c14d;
+}
+
+.popup-box button{
+    width:100%;
+    padding: 10px 20px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(#ffe48c,#e7a62b);
+    font-size:17px;
+    font-weight:bold;
+    color:#6a3b00;
+    margin-top:17px;
+    cursor:pointer;
+}
+
+.skip{
+    margin-top:20px;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
