@@ -746,6 +746,9 @@ body {
     .bonus-item span{
         font-size:13px;
     }
+    .download-btn{
+        margin-top: -85px;
+    }
 }
 
 

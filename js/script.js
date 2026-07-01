@@ -65,28 +65,28 @@ footerLinks.forEach(link => {
 
 //section button
 const gameLinks = document.querySelectorAll(".game-link");
-const pages = document.querySelectorAll(".content-page");
+const pages = document.querySelectorAll(".game-content");
 
 gameLinks.forEach(link => {
 
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", function(e){
+
         e.preventDefault();
 
-        // sab content hide
-        pages.forEach(page => {
-            page.style.display = "none";
+        pages.forEach(page=>{
+            page.style.display="none";
         });
 
-        // selected content show
-        const pageId = this.getAttribute("data-page");
-        document.getElementById(pageId).style.display = "block";
+        const pageId = this.dataset.page;
 
-        // active class
-        gameLinks.forEach(item => {
-            item.classList.remove("active");
+        document.getElementById(pageId).style.display="block";
+
+        gameLinks.forEach(btn=>{
+            btn.classList.remove("active");
         });
 
         this.classList.add("active");
+
     });
 
 });
