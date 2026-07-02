@@ -91,13 +91,13 @@ gameLinks.forEach(link => {
 
 });
 
-
-// popup box
 function openPopup() {
+
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        return;
+    }
+
     document.getElementById("popup").style.display = "flex";
-}
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
 }
 
 

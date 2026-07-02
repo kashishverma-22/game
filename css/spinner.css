@@ -1,0 +1,1022 @@
+/*==========================
+      INVITE WHEEL
+===========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #9195a3;
+    display: flex;
+    justify-content: center;
+
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 400px;
+    position: relative;
+    background: #252525;
+}
+
+.spinner-link {
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#wheelGuest {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: 200vh;
+    position: relative;
+    overflow: hidden;
+    background: url("../image/turntable_bg.png") repeat-y center bottom;
+    background-size: cover;
+
+}
+
+/* Header */
+
+.wheel-header {
+    height: 60px;
+    background: linear-gradient(to right, #f9df93, #d7a23d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.wheel-header h2 {
+    font-size: 20px;
+    color: #7d4a00;
+    font-weight: 700;
+}
+
+a .back-btn {
+    position: absolute;
+    left: 18px;
+    bottom: 20px;
+    font-size: 22px;
+    color: #7d4a00;
+    cursor: pointer;
+}
+
+.wheel-header-icons {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    gap: 18px;
+}
+
+.wheel-header-icons i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Top */
+
+.wheel-top {
+    text-align: center;
+    padding: 18px 15px;
+}
+
+.wheel-top p {
+    color: #a5481d;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.wheel-top h1 {
+    color: #ffc06b;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.cash-btn {
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to bottom, #ffcb45, #ff8400);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .25);
+}
+
+/* Wheel */
+
+.wheel-body {
+    width: 100%;
+    max-width: 380px;
+    margin: -80px auto 0;
+    position: relative;
+    text-align: center;
+}
+
+/* Stand Image */
+.wheel-body {
+    background: url("../image/turn_bottom.png") no-repeat bottom center;
+    background-size: 100% auto;
+    padding-bottom: 90px;
+    /* stand ke liye space */
+}
+
+/* Spinner */
+.wheel-image {
+    display: block;
+    width: 320px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/*==========================
+      Invite Section
+==========================*/
+
+.invite-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.invite-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #ffc84f, #ff8c00);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.invite-btn:hover {
+    opacity: .95;
+}
+
+.invite-text {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .50);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.popup-box {
+    width: 399px;
+    max-width: 90%;
+    background: #353535;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 20px 20px;
+    margin-left: 3px;
+    margin-top: 270px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.gift {
+    width: 180px;
+    margin-top: -90px;
+}
+
+.popup-box h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.popup-box p {
+    color: #ddd;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.popup-box p span {
+    color: #f5c14d;
+}
+
+.popup-box button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(#ffe48c, #e7a62b);
+    font-size: 17px;
+    font-weight: bold;
+    color: #6a3b00;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.skip {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*==========================
+        Record
+==========================*/
+
+.record-section {
+    width: 100%;
+    padding: 25px 18px 100px;
+}
+
+.record-section h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.record-list {
+    width: 100%;
+    min-height: 180px;
+}
+
+/* Logged In Page */
+
+#wheelUser {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    min-height: 200vh;
+    height: 100%;
+    background: url("../image/turntable_bg.png") no-repeat center top;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+/* Invite */
+
+.invite-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+.invite-btn {
+    width: 290px;
+    max-width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(#ffd55a, #ff9800);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .18);
+}
+
+.invite-text {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Record */
+
+.record-section {
+    margin-top: 30px;
+    padding: 10px 18px 35px;
+    border-radius: 30px 30px 0 0;
+}
+
+.record-section h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.record-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.record-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.record-left img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .4);
+    object-fit: cover;
+}
+
+.record-left span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.record-left h4{
+    color: #fff;
+    font-size: 15px;
+    font-weight:400;
+}
+.record-right {
+    text-align: right;
+}
+
+.record-right h3 {
+    color: #ffd739;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.record-right span {
+    color: #ffd6d6;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.record-item:last-child {
+    border-bottom: none;
+}
+.wheel-body{
+    position:relative;
+}
+
+.wheel-image{
+    width:320px;
+    display:block;
+    margin:auto;
+}
+
+.spin-center{
+    position:absolute;
+    left:50%;
+    top:53%;
+    transform:translate(-50%,-50%);
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    background:linear-gradient(#fff8d7,#ffd86b);
+    border:6px solid #ff5b39;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    z-index:100;
+    box-shadow:0 0 12px rgba(0,0,0,.25);
+}
+
+.spin-center h2{
+    font-size:30px;
+    color:#ff5533;
+    line-height:1;
+    margin:0;
+    font-weight:700;
+}
+
+.spin-center span{
+    font-size:9px;
+    color:#ff5533;
+    margin-top:3px;
+    font-weight:600;
+}
+/*=========================
+      Reward Popup
+=========================*/
+
+.reward-popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.reward-box{
+    width:320px;
+    max-width:90%;
+    background:#fff;
+    border-radius:20px;
+    padding:30px 20px;
+    text-align:center;
+    animation:popup .35s ease;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.reward-box h2{
+    color:#ff5d00;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.reward-box h1{
+    color:#ff9800;
+    font-size:48px;
+    margin:20px 0;
+    font-weight:700;
+}
+
+.reward-box button{
+    width:100%;
+    height:48px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(#ffd54f,#ff9800);
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.reward-box button:hover{
+    opacity:.95;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* ===================================
+        RESPONSIVE 400px → 200px
+===================================*/
+
+/* 400px */
+@media screen and (max-width:400px){
+
+.app-container,
+#wheelGuest,
+#wheelUser{
+    width:100%;
+    max-width:400px;
+}
+
+.wheel-header{
+    height:58px;
+}
+
+.wheel-header h2{
+    font-size:18px;
+}
+
+.back-btn{
+    left:15px;
+    font-size:20px;
+}
+
+.wheel-top{
+    padding:15px;
+}
+
+.wheel-top p{
+    font-size:14px;
+}
+
+.wheel-top h1{
+    font-size:34px;
+}
+
+.cash-btn{
+    width:140px;
+    height:42px;
+    font-size:16px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    width:100%;
+    max-width:360px;
+    margin:-60px auto 0;
+    background-size:100% auto;
+    padding-bottom:82px;
+}
+
+.wheel-image{
+    width:300px;
+    max-width:88%;
+}
+
+.spin-center{
+    width:70px;
+    height:70px;
+    border-width:5px;
+}
+
+.spin-center h2{
+    font-size:27px;
+}
+
+.spin-center span{
+    font-size:8px;
+}
+
+.popup-box{
+    width:94%;
+    margin-top:220px;
+}
+
+.gift{
+    width:150px;
+}
+
+.record-section{
+    padding:20px 15px 80px;
+}
+
+.record-left img{
+    width:40px;
+    height:40px;
+}
+
+.record-right h3{
+    font-size:17px;
+}
+
+}
+
+
+/* ===========================
+          360px
+=========================== */
+
+@media screen and (max-width:360px){
+
+.wheel-header{
+    height:55px;
+}
+
+.wheel-header h2{
+    font-size:17px;
+}
+
+.wheel-header-icons i{
+    font-size:20px;
+}
+
+.wheel-top h1{
+    font-size:30px;
+}
+
+.cash-btn{
+    width:130px;
+    height:40px;
+    font-size:15px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    max-width:330px;
+    margin:-50px auto 0;
+    padding-bottom:75px;
+}
+
+.wheel-image{
+    width:270px;
+}
+
+.spin-center{
+    width:64px;
+    height:64px;
+}
+
+.spin-center h2{
+    font-size:24px;
+}
+
+.invite-btn{
+    width:100%;
+    height:45px;
+    font-size:14px;
+}
+
+.invite-text{
+    font-size:14px;
+}
+
+.popup-box{
+    margin-top:180px;
+}
+
+.popup-box h2{
+    font-size:18px;
+}
+
+.popup-box p{
+    font-size:14px;
+    line-height:22px;
+}
+
+.popup-box button{
+    height:44px;
+    font-size:15px;
+}
+
+.reward-box{
+    width:90%;
+}
+
+.reward-box h1{
+    font-size:40px;
+}
+
+.reward-box h2{
+    font-size:22px;
+}
+
+}
+
+
+/* ===========================
+          320px
+=========================== */
+
+@media screen and (max-width:320px){
+
+.wheel-top{
+    padding:12px;
+}
+
+.wheel-top p{
+    font-size:13px;
+}
+
+.wheel-top h1{
+    font-size:26px;
+}
+
+.cash-btn{
+    width:120px;
+    height:38px;
+    font-size:14px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    max-width:290px;
+    margin:-40px auto 0;
+    padding-bottom:65px;
+}
+
+.wheel-image{
+    width:235px;
+}
+
+.spin-center{
+    width:58px;
+    height:58px;
+    border-width:4px;
+}
+
+.spin-center h2{
+    font-size:22px;
+}
+
+.spin-center span{
+    font-size:7px;
+}
+
+.record-left img{
+    width:34px;
+    height:34px;
+}
+
+.record-left span,
+.record-left h4{
+    font-size:13px;
+}
+
+.record-right h3{
+    font-size:15px;
+}
+
+.record-right span{
+    font-size:11px;
+}
+
+.gift{
+    width:130px;
+}
+
+.reward-box h1{
+    font-size:34px;
+}
+
+.reward-box button{
+    height:44px;
+}
+
+}
+
+
+/* ===========================
+          280px
+=========================== */
+
+@media screen and (max-width:280px){
+
+.wheel-header{
+    height:50px;
+}
+
+.wheel-header h2{
+    font-size:15px;
+}
+
+.wheel-top h1{
+    font-size:22px;
+}
+
+.cash-btn{
+    width:110px;
+    height:35px;
+    font-size:13px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    max-width:250px;
+    margin:-28px auto 0;
+    padding-bottom:55px;
+}
+
+.wheel-image{
+    width:200px;
+}
+
+.spin-center{
+    width:50px;
+    height:50px;
+}
+
+.spin-center h2{
+    font-size:18px;
+}
+
+.spin-center span{
+    display:none;
+}
+
+.record-item{
+    padding:12px 0;
+}
+
+.popup-box{
+    margin-top:140px;
+}
+
+.gift{
+    width:100px;
+}
+
+.reward-box h1{
+    font-size:28px;
+}
+
+.reward-box h2{
+    font-size:18px;
+}
+
+}
+
+
+/* ===========================
+          240px
+=========================== */
+
+@media screen and (max-width:240px){
+
+.wheel-top h1{
+    font-size:20px;
+}
+
+.cash-btn{
+    width:95px;
+    height:32px;
+    font-size:12px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    max-width:210px;
+    margin:-20px auto 0;
+    padding-bottom:45px;
+}
+
+.wheel-image{
+    width:165px;
+}
+
+.spin-center{
+    width:42px;
+    height:42px;
+}
+
+.spin-center h2{
+    font-size:15px;
+}
+
+.invite-btn{
+    height:40px;
+    font-size:12px;
+}
+
+.invite-text{
+    font-size:12px;
+}
+
+.record-section h2{
+    font-size:16px;
+}
+
+.record-left{
+    gap:8px;
+}
+
+.record-left img{
+    width:30px;
+    height:30px;
+}
+
+.record-right h3{
+    font-size:13px;
+}
+
+.popup-box{
+    padding:15px;
+}
+
+.reward-box{
+    padding:20px 12px;
+}
+
+.reward-box h1{
+    font-size:24px;
+}
+
+.reward-box button{
+    height:40px;
+    font-size:14px;
+}
+
+}
+
+
+/* ===========================
+          200px
+=========================== */
+
+@media screen and (max-width:200px){
+
+.wheel-header h2{
+    font-size:13px;
+}
+
+.wheel-top h1{
+    font-size:18px;
+}
+
+.wheel-top p{
+    font-size:11px;
+}
+
+.cash-btn{
+    width:82px;
+    height:30px;
+    font-size:11px;
+}
+
+/* Wheel */
+
+.wheel-body{
+    max-width:180px;
+    margin:-15px auto 0;
+    padding-bottom:38px;
+}
+
+.wheel-image{
+    width:145px;
+}
+
+.spin-center{
+    width:36px;
+    height:36px;
+}
+
+.spin-center h2{
+    font-size:13px;
+}
+
+.record-left span,
+.record-left h4{
+    font-size:11px;
+}
+
+.record-right h3{
+    font-size:11px;
+}
+
+.record-right span{
+    font-size:9px;
+}
+
+.popup-box{
+    width:96%;
+    margin-top:90px;
+}
+
+.gift{
+    width:80px;
+}
+
+.popup-box h2{
+    font-size:14px;
+}
+
+.popup-box p{
+    font-size:11px;
+    line-height:18px;
+}
+
+.popup-box button{
+    height:36px;
+    font-size:12px;
+}
+
+.reward-box h1{
+    font-size:20px;
+}
+
+.reward-box h2{
+    font-size:16px;
+}
+
+.reward-box button{
+    height:36px;
+    font-size:12px;
+}
+
+}

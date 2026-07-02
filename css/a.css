@@ -375,3 +375,454 @@
     font-size:16px;
     cursor:pointer;
 }
+
+/* ---------- 380px ---------- */
+
+@media(max-width:380px){
+
+.game-grid,
+.popular-grid,
+.fishing-grid{
+    gap:10px;
+}
+
+.games-grid,
+.sports-grid,
+.casino-grid,
+.pvc-grid{
+    gap:10px;
+}
+
+.mini-games,
+.slots,
+.sports,
+.popular-section,
+.casino,
+.rummy,
+.fishing-section{
+    padding:12px;
+}
+
+.popup-box h2{
+    font-size:18px;
+}
+
+.popup-box p{
+    font-size:14px;
+}
+
+}
+
+
+/* ---------- 320px ---------- */
+
+@media(max-width:320px){
+
+.game-grid,
+.popular-grid,
+.fishing-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.games-grid,
+.sports-grid,
+.casino-grid,
+.pvc-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.rtp{
+    font-size:11px;
+    padding:5px;
+}
+
+.popup-box{
+    padding:18px;
+}
+
+.popup-box button{
+    height:42px;
+    font-size:15px;
+}
+
+.gift{
+    width:130px;
+}
+
+}
+
+
+/* ---------- 250px ---------- */
+
+@media(max-width:250px){
+
+.game-grid,
+.games-grid,
+.sports-grid,
+.popular-grid,
+.casino-grid,
+.pvc-grid,
+.fishing-grid{
+    grid-template-columns:1fr;
+}
+
+.mini-games h2,
+.slots h2,
+.sports h2,
+.popular-section h2,
+.casino h2,
+.rummy h2,
+.fishing-section h2{
+    font-size:16px;
+}
+
+.popup-box{
+    padding:15px;
+}
+
+.popup-box h2{
+    font-size:17px;
+}
+
+.popup-box p{
+    font-size:13px;
+    line-height:22px;
+}
+
+.popup-box button{
+    font-size:14px;
+}
+
+.gift{
+    width:110px;
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE (400px → 200px)
+==========================================*/
+
+/* Common */
+.mini-games,
+.slots,
+.sports,
+.popular-section,
+.casino,
+.rummy,
+.fishing-section{
+    width:100%;
+    max-width:400px;
+    margin:auto;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+/* Images never overflow */
+.game-cards img,
+.sports-cards img,
+.casino-cards img,
+.pvc-cards img,
+.popular-card img,
+.fishing-card img{
+    width:100%;
+    display:block;
+}
+
+/* ---------- 380px ---------- */
+
+@media (max-width:380px){
+
+.mini-games,
+.slots,
+.sports,
+.popular-section,
+.casino,
+.rummy,
+.fishing-section{
+    padding:12px;
+}
+
+.game-grid,
+.popular-grid,
+.fishing-grid{
+    gap:10px;
+}
+
+.games-grid,
+.sports-grid,
+.casino-grid,
+.pvc-grid{
+    gap:10px;
+}
+
+.game-cards img,
+.sports-cards img,
+.casino-cards img,
+.pvc-cards img{
+    height:165px;
+}
+
+.popular-card img,
+.fishing-card img{
+    height:135px;
+}
+
+.popup-box{
+    width:92%;
+    margin-top:190px;
+}
+
+.gift{
+    width:150px;
+    margin-top:-75px;
+}
+
+.popup-box h2{
+    font-size:18px;
+}
+
+.popup-box p{
+    font-size:15px;
+    line-height:24px;
+}
+
+.popup-box button{
+    height:45px;
+    font-size:16px;
+}
+
+}
+
+
+/* ---------- 320px ---------- */
+
+@media (max-width:320px){
+
+.mini-games h2,
+.slots h2,
+.sports h2,
+.popular-section h2,
+.casino h2,
+.rummy h2,
+.fishing-section h2{
+    font-size:16px;
+}
+
+.game-grid{
+    gap:8px;
+}
+
+.popular-grid,
+.fishing-grid{
+    gap:8px;
+}
+
+.games-grid,
+.sports-grid,
+.casino-grid,
+.pvc-grid{
+    gap:8px;
+}
+
+.game-cards img,
+.sports-cards img,
+.casino-cards img,
+.pvc-cards img{
+    height:140px;
+}
+
+.popular-card img,
+.fishing-card img{
+    height:115px;
+    border-width:3px;
+}
+
+.rtp{
+    padding:5px 7px;
+    font-size:10px;
+}
+
+.popup-box{
+    width:94%;
+    padding:18px;
+    margin-top:170px;
+}
+
+.gift{
+    width:130px;
+    margin-top:-65px;
+}
+
+.popup-box h2{
+    font-size:17px;
+}
+
+.popup-box p{
+    font-size:14px;
+    line-height:22px;
+}
+
+.popup-box button{
+    height:42px;
+    font-size:15px;
+}
+
+.skip{
+    font-size:14px;
+}
+
+}
+
+
+/* ---------- 280px ---------- */
+
+@media (max-width:280px){
+
+.game-grid,
+.popular-grid,
+.fishing-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.games-grid,
+.sports-grid,
+.casino-grid,
+.pvc-grid{
+    grid-template-columns:1fr;
+}
+
+.game-cards img,
+.sports-cards img,
+.casino-cards img,
+.pvc-cards img{
+    height:180px;
+}
+
+.popular-card img,
+.fishing-card img{
+    height:150px;
+}
+
+.popup-box{
+    padding:15px;
+}
+
+.gift{
+    width:110px;
+}
+
+.popup-box h2{
+    font-size:16px;
+}
+
+.popup-box p{
+    font-size:13px;
+    line-height:20px;
+}
+
+.popup-box button{
+    height:40px;
+    font-size:14px;
+}
+
+}
+
+
+/* ---------- 240px ---------- */
+
+@media (max-width:240px){
+
+.mini-games,
+.slots,
+.sports,
+.popular-section,
+.casino,
+.rummy,
+.fishing-section{
+    padding:8px;
+}
+
+.game-grid,
+.games-grid,
+.sports-grid,
+.popular-grid,
+.casino-grid,
+.pvc-grid,
+.fishing-grid{
+    grid-template-columns:1fr;
+}
+
+.game-cards img,
+.sports-cards img,
+.casino-cards img,
+.pvc-cards img,
+.popular-card img,
+.fishing-card img{
+    height:auto;
+    aspect-ratio:3/4;
+}
+
+.popup-box{
+    width:96%;
+    margin-top:120px;
+}
+
+.gift{
+    width:90px;
+    margin-top:-45px;
+}
+
+.popup-box h2{
+    font-size:15px;
+}
+
+.popup-box p{
+    font-size:12px;
+    line-height:18px;
+}
+
+.popup-box button{
+    height:38px;
+    font-size:13px;
+}
+
+.skip{
+    font-size:13px;
+}
+
+}
+
+
+/* ---------- 200px ---------- */
+
+@media (max-width:200px){
+
+.mini-games h2,
+.slots h2,
+.sports h2,
+.popular-section h2,
+.casino h2,
+.rummy h2,
+.fishing-section h2{
+    font-size:13px;
+}
+
+.popup-box{
+    padding:12px;
+}
+
+.popup-box button{
+    height:34px;
+    font-size:12px;
+}
+
+.popup-box p{
+    font-size:11px;
+}
+
+.skip{
+    font-size:11px;
+}
+
+}

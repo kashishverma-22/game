@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/spinner.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div id="wheelPage" class="content-page">
+
+            <!-- Guest (Logout) -->
+            <div id="wheelGuest">
+
+                <!-- Header -->
+                <div class="wheel-header">
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-chevron-left back-btn"></i>
+
+                    </a>
+
+                    <h2>Invite Wheel</h2>
+
+                    <div class="wheel-header-icons">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <i class="fa-regular fa-rectangle-list"></i>
+                    </div>
+
+                </div>
+
+                <!-- Top -->
+                <div class="wheel-top">
+
+                    <p>my amount(25:50:25)</p>
+
+                    <h1>₹0.00</h1>
+
+                    <button class="cash-btn">
+                        CASH OUT
+                    </button>
+
+                </div>
+
+                <!-- Wheel -->
+                <div class="wheel-body" id="wheelSpinner">
+
+                    <img src="image/spin2.png" class="wheel-image">
+
+                </div>
+                <!-- Invite Section -->
+                <div class="invite-section">
+
+                    <button class="invite-btn">
+                        INVITE FRIENDS TO GET SPIN
+                    </button>
+
+                    <p class="invite-text">
+                        Only ₹500.00 left to get prize ₹500.00
+                    </p>
+
+                </div>
+
+                <!-- Record -->
+                <!-- Record -->
+                <div class="record-section">
+
+                    <h2>Record</h2>
+
+                </div>
+
+                <!-- <div class="popup" id="popup">
+                    <div class="popup-box">
+
+                        <img src="image/gift.png" class="gift">
+                        <h2>Event Rewards</h2>
+                        <p>
+                            Log in to participate in the
+                            <span>event rewards</span> and unlock
+                            all 8 exclusive rewards
+                        </p>
+
+                        <button onclick="location.href='login.html'">
+                            Log in now to participate
+                        </button>
+
+                        <div class="skip" onclick="closePopup()">
+                            Don't log in yet, continue browsing
+                        </div>
+
+                    </div>
+                </div> -->
+
+            </div>
+
+            <!-- Logged In -->
+            <div id="wheelUser" style="display:none;">
+
+                <!-- Header -->
+                <div class="wheel-header">
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-chevron-left back-btn"></i>
+                    </a>
+
+                    <h2>Invite Wheel</h2>
+
+                    <div class="wheel-header-icons">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <i class="fa-regular fa-rectangle-list"></i>
+                    </div>
+
+                </div>
+
+                <!-- Top -->
+                <div class="wheel-top">
+
+                    <p>my amount(06:37:07)</p>
+
+                    <h1 id="walletAmount">₹496.66</h1>
+
+                    <button class="cash-btn">
+                        CASH OUT
+                    </button>
+
+                </div>
+
+                <!-- Wheel -->
+                <div class="wheel-body">
+
+                    <!-- Wheel -->
+                    <img src="image/spin.png" id="spinWheel" class="wheel-image">
+
+                    <!-- Center Button
+                    <div id="spinCenter" class="spin-center">
+
+                        <h2 id="spinText">X1</h2>
+
+                        <span>FREE SPIN</span>
+
+                    </div> -->
+
+                </div>
+
+                <!-- Invite -->
+                <div class="invite-section">
+
+                    <button class="invite-btn">
+                        INVITE FRIENDS TO GET SPIN
+                    </button>
+
+                    <p class="invite-text">
+                        Only ₹3.21 left to get prize ₹500.00
+                    </p>
+
+                </div>
+                <!-- Record -->
+                <div class="record-section">
+
+                    <h2>Record</h2>
+
+                    <div class="record-list">
+
+                        <div class="record-item">
+
+                            <div class="record-left">
+                                <img src="image/p6.png" alt="">
+                                <div>
+                                    <h4>MemberNNG34PXB</h4>
+                                </div>
+                            </div>
+
+                            <div class="record-right">
+                                <h3>₹0.13</h3>
+                                <span>2026-07-02 11:56:19</span>
+                            </div>
+
+                        </div>
+
+                        <div class="record-item">
+
+                            <div class="record-left">
+                                <img src="image/p6.png" alt="">
+                                <div>
+                                    <h4>MemberNNG34PXB</h4>
+                                </div>
+                            </div>
+
+                            <div class="record-right">
+                                <h3>₹0.02</h3>
+                                <span>2026-07-01 16:41:29</span>
+                            </div>
+
+                        </div>
+
+                        <div class="record-item">
+
+                            <div class="record-left">
+                                <img src="image/p6.png" alt="">
+                                <div>
+                                    <h4>MemberNNG34PXB</h4>
+                                </div>
+                            </div>
+
+                            <div class="record-right">
+                                <h3>₹0.19</h3>
+                                <span>2026-06-29 18:32:36</span>
+                            </div>
+
+                        </div>
+
+                        <div class="record-item">
+
+                            <div class="record-left">
+                                <img src="image/p6.png" alt="">
+                                <div>
+                                    <h4>MemberNNG34PXB</h4>
+                                </div>
+                            </div>
+
+                            <div class="record-right">
+                                <h3 class="big-amount">₹496.45</h3>
+                                <span>2026-06-29 18:32:29</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Reward Popup -->
+
+                <div class="reward-popup" id="rewardPopup">
+
+                    <div class="reward-box">
+
+                        <h2>🎉 Congratulations</h2>
+
+                        <h1 id="rewardAmount">₹198</h1>
+
+                        <button onclick="closeReward()">
+                            Collect
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+
+    <script src="js/spinner.js"></script>
+</body>
+
+</html>

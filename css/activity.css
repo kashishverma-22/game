@@ -234,7 +234,9 @@ body {
     justify-content:space-around;
     padding:25px 15px 20px;
 }
-
+.bonus-icons a{
+    text-decoration:none;
+}
 .bonus-item{
     text-align:center;
 }

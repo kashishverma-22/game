@@ -758,14 +758,36 @@ body {
 
 /* Center Spinner */
 
-.center-box {
-    position: relative;
-    width: 70px;
-    display: flex;
-    justify-content: center;
+.center-box{
+    position:relative;
+    width:85px;
+    display:flex;
+    justify-content:center;
 }
 
-.spinner-link span {
+.center-btn{
+    position:absolute;
+    top:-95px;
+    z-index:1;          /* niche */
+    pointer-events:none; /* click block nahi karega */
+}
+
+.spinner-link{
+    position:absolute;
+    top:-62px;
+    width:85px;
+    height:85px;
+    z-index:2;          /* upar */
+    cursor:pointer;
+}
+
+.spinner-link img{
+    width:100%;
+    display:block;
+}
+
+.spinner-link span{
+    cursor:pointer;
     text-decoration: none;
     color: #d7a947;
     display: flex;
@@ -775,22 +797,6 @@ body {
     cursor: default;
     font-size: 14px;
     font-weight: 600;
-    transition: .3s;
-
-}
-
-.spinner-link {
-    position: absolute;
-    text-decoration: none;
-    top: -62px;
-    width: 85px;
-    height: 68px;
-    cursor: default;
-}
-
-.spinner-link img {
-    width: 100%;
-
 }
 
 /* Button Above Spinner */
@@ -1177,237 +1183,3 @@ body {
     cursor:pointer;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media (max-width:400px){
-
-    .profile-header{
-        height:240px;
-        padding:30px 15px 85px;
-        margin-top:-90px;
-    }
-
-    .profile-info img{
-        width:70px;
-        height:70px;
-    }
-
-    .user-details h3{
-        font-size:15px;
-    }
-
-    .user-details p{
-        font-size:12px;
-    }
-
-    .uid-box{
-        font-size:11px;
-    }
-
-    .balance-card{
-        width:95%;
-        margin-top:-60px;
-        padding:12px;
-    }
-
-    .balance-row h2{
-        font-size:22px;
-    }
-
-    .balance-row button{
-        padding:7px 10px;
-        font-size:12px;
-    }
-
-    .wallet-menu span{
-        font-size:14px;
-    }
-
-    .wallet-menu i{
-        font-size:18px;
-    }
-
-    .history-card{
-        padding:10px;
-    }
-
-    .history-card h4{
-        font-size:14px;
-    }
-
-    .history-card p{
-        font-size:12px;
-    }
-
-    .history-card i{
-        font-size:24px;
-    }
-
-    .menu-item{
-        padding:15px;
-        font-size:14px;
-    }
-
-    .service-grid{
-        gap:15px;
-    }
-
-    .service-grid i{
-        font-size:22px;
-    }
-
-    .service-grid a{
-        font-size:13px;
-    }
-
-    .logout-btn{
-        font-size:16px;
-    }
-}
-
-/* ================= 320px ================= */
-
-@media (max-width:320px){
-
-    .profile-header{
-        height:220px;
-        border-radius:0 0 25px 25px;
-    }
-
-    .profile-info{
-        gap:10px;
-    }
-
-    .profile-info img{
-        width:60px;
-        height:60px;
-    }
-
-    .user-details h3{
-        font-size:13px;
-    }
-
-    .uid-box{
-        font-size:10px;
-        padding:3px 6px;
-    }
-
-    .balance-row{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:12px;
-        margin-top:10px;
-    }
-
-    .balance-row button{
-        width:100%;
-    }
-
-    .wallet-menu{
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    .wallet-menu div{
-        width:45%;
-    }
-
-    .history-grid{
-        grid-template-columns:1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .menu-item{
-        padding:13px;
-        font-size:13px;
-    }
-
-    .logout-box{
-        width:92%;
-        padding:25px 15px;
-    }
-
-    .logout-box h3{
-        font-size:16px;
-    }
-
-    .confirm-btn,
-    .cancel-btn{
-        height:42px;
-        font-size:17px;
-    }
-}
-
-/* ================= 250px - 200px ================= */
-
-@media (max-width:250px){
-
-    .profile-header{
-        padding:20px 10px 80px;
-        height:210px;
-    }
-
-    .profile-info{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .profile-info img{
-        width:55px;
-        height:55px;
-    }
-
-    .user-details h3{
-        font-size:12px;
-    }
-
-    .user-details p{
-        font-size:11px;
-    }
-
-    .balance-card{
-        padding:10px;
-    }
-
-    .balance-row h2{
-        font-size:18px;
-    }
-
-    .wallet-menu{
-        gap:10px;
-    }
-
-    .wallet-menu div{
-        width:100%;
-    }
-
-    .wallet-menu span{
-        font-size:12px;
-    }
-
-    .history-card{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .history-card i{
-        padding:0;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .service-center{
-        padding:15px;
-    }
-
-    .logout-btn{
-        font-size:14px;
-        height:40px;
-    }
-}
