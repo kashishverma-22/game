@@ -92,12 +92,19 @@ gameLinks.forEach(link => {
 });
 
 function openPopup() {
-
     if (localStorage.getItem("isLoggedIn") === "true") {
         return;
     }
 
     document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function goLogin() {
+    window.location.href = "login.html";
 }
 
 
